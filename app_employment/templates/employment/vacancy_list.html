@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacancy list</title>
+</head>
+
+<body>
+    <h2>Vacancy list</h2>
+
+    {% if vacancy_list %}
+
+    <ul>
+        {% for vacancy in vacancy_list %}
+
+        <li>
+            <a href="#">
+                {{ vacancy.title}}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    {%else%}
+    <p>Вакансий нет</p>
+    {% endif %}
+
+</body>
+
+</html>

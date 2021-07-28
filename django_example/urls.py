@@ -8,5 +8,5 @@ urlpatterns = [
     path('', MainView.as_view(), name='main'),
     path('admin/', admin.site.urls),
     path('users/', include('app_users.urls')),
-
+    path('employment/', include('app_employment.urls')),
 ]
