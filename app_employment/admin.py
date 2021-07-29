@@ -6,4 +6,4 @@ class VacancyAdmin(admin.ModelAdmin):
     list_display = ['id', 'title']
 
 
-admin.site.register(Vacancy)
+admin.site.register(Vacancy, VacancyAdmin)
